@@ -1,2 +1,7 @@
 # kafka-mirrormaker-docker
-A Docker container based on @wurstmeister/docker-kafka that starts a MirrorMaker configurable by environment variables.
+An [Apache Kafka](https://github.com/apache/kafka) Docker container based on [wurstmeister/kafka-docker](https://github.com/wurstmeister/kafka-docker) that starts a MirrorMaker configurable by environment variables.
+
+* New versions will be released based on wurstmeister's releases.
+* Only a subset of MirrorMaker's settings are currently configurable via environment variable.
+  If you'd like to add to that set, please [file a ticket](https://github.com/tobiasgies/kafka-mirrormaker-docker/issues)
+  and let's discuss – or even better, [create a pull request](https://github.com/tobiasgies/kafka-mirrormaker-docker/pulls)!
