@@ -41,10 +41,10 @@ EOF
 
 if [[ -n "${SLEEP_BEFORE_START}" ]]; then
     echo "INFO: Sleeping ${SLEEP_BEFORE_START} seconds before starting MirrorMaker."
-    sleep ${SLEEP_BEFORE_START}
+    sleep "${SLEEP_BEFORE_START}"
 fi
 
 /opt/kafka/bin/kafka-mirror-maker.sh \
     --consumer.config ${consumer_config_file} \
     --producer.config ${producer_config_file} \
-    --whitelist ${WHITELIST}
+    --whitelist "${WHITELIST}"
